@@ -6,12 +6,12 @@
 
     <artifactId>gauge-annotation-processor</artifactId>
     <groupId>dev.i-whammy</groupId>
-    <version>0.1.0</version>
+    <version>0.2.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>gauge-annotation-processor</name>
     <description>This annotation processor lets users know values of Gauge annotations.</description>
-    <url>https://github.com/i-whammy</url>
+    <url>https://github.com/i-whammy/gauge-annotation-processor</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,6 +19,7 @@
         <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
         <kotlin.version>1.9.0</kotlin.version>
         <gauge.java.version>0.10.3</gauge.java.version>
+        <kotest.version>5.8.0</kotest.version>
     </properties>
 
     <repositories>
@@ -124,20 +125,20 @@
     <dependencies>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-test-junit5</artifactId>
-            <version>${kotlin.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.10.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-jdk8</artifactId>
             <version>${kotlin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.kotest</groupId>
+            <artifactId>kotest-runner-junit5-jvm</artifactId>
+            <version>${kotest.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.kotest</groupId>
+            <artifactId>kotest-assertions-core-jvm</artifactId>
+            <version>${kotest.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.thoughtworks.gauge</groupId>
