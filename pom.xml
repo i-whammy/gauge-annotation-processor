@@ -169,8 +169,8 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:git:git://github.com/i-whammy/mvn-outdated.git</connection>
-        <developerConnection>scm:git:ssh://github.com:i-whammy/mvn-outdated.git</developerConnection>
-        <url>https://github.com/i-whammy/mvn-outdated/tree/main</url>
+        <connection>scm:git:git://github.com/i-whammy/gauge-annotation-processor.git</connection>
+        <developerConnection>scm:git:ssh://github.com:i-whammy/gauge-annotation-processor.git</developerConnection>
+        <url>https://github.com/i-whammy/gauge-annotation-processor/tree/main</url>
     </scm>
 </project>
